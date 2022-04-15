@@ -1,0 +1,15 @@
+# teach trajectory
+recordPath: /home/jing/ws_tr/src/laser_teach_repeat/data/poses.txt
+
+# gt trajectory from gazebo
+recordGtPath: /home/jing/ws_tr/src/laser_teach_repeat/data/teach_gtPoses.txt
+
+# the path to be stored
+recordMapPath: /home/jing/ws_tr/src/laser_teach_repeat/data/map
+
+# l2 distance and radian, when to be recorded about the anchor point 
+disThreshold: 0.3
+yawThreshold: 0.05
+
+# whether to use gazebo
+useGazebo: false

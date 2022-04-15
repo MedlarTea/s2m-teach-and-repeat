@@ -1,0 +1,6 @@
+<launch>
+    <!-- if value is bigger than threshold, it's a leg point, -->
+    <!-- <param name = "threshold" type = "float" value = "1.5" /> -->
+    <node name="filter_node" pkg = "laser_teach_repeat" type = "filter_node" output = "screen">
+    </node>
+</launch>

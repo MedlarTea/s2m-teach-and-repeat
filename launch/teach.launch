@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find laser_teach_repeat)/config/teach.yaml" command="load" />
+    <node name="teach_node" pkg = "laser_teach_repeat" type = "teach_node" output = "screen">
+    </node>
+</launch>

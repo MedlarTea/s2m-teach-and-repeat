@@ -1,0 +1,19 @@
+# trajectory to be repeated
+posesPath: /home/jing/ws_tr/src/laser_teach_repeat/data/poses.txt
+
+# gt trajectory from gazebo
+recordGtPath: /home/jing/ws_tr/src/laser_teach_repeat/data/teach_gtPoses.txt
+
+# when to change to the next anchor point to follow
+# also called tolerance
+repeat_param_list: [0.15, 0.15, 0.03]  # [x_threshold, y_threshold, a_threshold]
+
+# whether to use gazebo
+useGazebo: false
+
+# params of pd control
+# [Kp_v_x, Ki_v_x, Kd_v_x, Kp_v_y, Ki_v_y, Kd_v_y, Kp_a, Ki_a, Kd_a, umax, umin]
+PD_param_list: [0.3, 0.02, 0.05, 
+                0.3, 0.02, 0.05, 
+                0.3, 0.02, 0.05, 
+                0.8, 0.0]  
